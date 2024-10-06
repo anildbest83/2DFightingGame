@@ -15,7 +15,7 @@ public class Shooting : MonoBehaviour
     {
 
         if (PauseMenu.gameIsPaused) return;
-        if (Input.GetButton("Fire1") && nextTimeToFire >= Time.time)
+        if (Input.GetButton("Fire1") && nextTimeToFire <= Time.time)
         {
             nextTimeToFire = Time.time + 1/currentWeapon.fireRate;
             Shoot();
