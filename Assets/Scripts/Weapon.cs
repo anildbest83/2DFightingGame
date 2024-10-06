@@ -9,6 +9,5 @@ public class Weapon : ScriptableObject
     public string description;
     public float damage;
     public float BulletSpeed;
-    public float range;
     public float fireRate;
 }
