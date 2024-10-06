@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour
             GameObject.Find("Player").GetComponent<Score>().enemiesKilled++;
         }
 
+        //Comment here
         Destroy(gameObject);
     }
 }
