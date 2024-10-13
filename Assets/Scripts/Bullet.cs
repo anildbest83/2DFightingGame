@@ -15,7 +15,10 @@ public class Bullet : MonoBehaviour
             {
                 enemyHealth.TakeDamage(weaponInfo.damage);
             }
-            GameObject.Find("Player").GetComponent<Score>().enemiesKilled++;
+            if (enemyHealth.isDead)
+            {
+                GameObject.Find("Player").GetComponent<Score>().enemiesKilled++;
+            }
         }
 
         //Comment here

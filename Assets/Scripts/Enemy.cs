@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public GameObject Player;
     public float speed = 5f;
+    public float attckDamage = 10f;
 
     private float distance;
 
@@ -31,7 +32,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            GameObject.Find("GameManager").GetComponent<GameManager>().GameOver();
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(attckDamage);
         }
     }
 }

@@ -3724,6 +3724,7 @@ GameObject:
   - component: {fileID: 1808540458}
   - component: {fileID: 1808540459}
   - component: {fileID: 1808540460}
+  - component: {fileID: 1808540461}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3918,6 +3919,20 @@ MonoBehaviour:
   enemiesKilled: 0
   scoreText: {fileID: 524890911}
   HighScoreText: {fileID: 920971989}
+--- !u!114 &1808540461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808540453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bea8bb2df641ce4d854df74968e2688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
+  isDead: 0
 --- !u!1 &2028164479 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4036526527296354543, guid: 15ebdd0e1323e1a498abaed8c734b6e6, type: 3}
@@ -3953,7 +3968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2049982831
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ public class Score : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI HighScoreText;
 
+
+
     private void Start()
     {
         HighScoreText.text = PlayerPrefs.GetInt("HighScore", 0).ToString();

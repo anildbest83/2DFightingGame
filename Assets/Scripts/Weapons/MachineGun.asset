@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0a8d3568ac721349b1460cec63fc02e, type: 3}
-  m_Name: Pistol
+  m_Name: MachineGun
   m_EditorClassIdentifier: 
-  name: Pistol
-  description: A high damage gun with low fire rate
-  damage: 20
-  BulletSpeed: 15
-  fireRate: 2
+  name: 
+  description: 
+  damage: 0
+  BulletSpeed: 0
+  fireRate: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     public float health = 20f;
     public bool isDead = false;
@@ -11,13 +11,7 @@ public class EnemyHealth : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            Die();
+            GameObject.Find("GameManager").GetComponent<GameManager>().GameOver();
         }
-    }
-
-    private void Die()
-    {
-        isDead = true;
-        Destroy(gameObject);
     }
 }
