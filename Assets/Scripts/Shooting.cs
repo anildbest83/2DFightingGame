@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     [SerializeField] private Transform firePoint;
-    [SerializeField] private Weapon currentWeapon;
+    public Weapon currentWeapon;
     public GameObject bulletPrefab;
 
     private float nextTimeToFire;

@@ -9,7 +9,7 @@ public class Score : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI HighScoreText;
-
+    public TextMeshProUGUI gameOverScoreText;
 
 
     private void Start()
@@ -20,6 +20,7 @@ public class Score : MonoBehaviour
     private void Update()
     {
         scoreText.text = enemiesKilled.ToString();
+        gameOverScoreText.text = enemiesKilled.ToString();
 
         if (enemiesKilled > PlayerPrefs.GetInt("HighScore", 0))
         {
