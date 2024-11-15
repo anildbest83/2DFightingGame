@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 5f;
+    public float speed = 5f;
     [SerializeField] private Transform firePoint;
+    public bool hasPowerUpActivated;
 
     private Rigidbody2D rb;
 
@@ -25,6 +24,11 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        if (hasPowerUpActivated)
+        {
+
+        }
     }
 
     private void FixedUpdate()

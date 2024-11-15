@@ -17,3 +17,7 @@ MonoBehaviour:
   damage: 20
   BulletSpeed: 15
   fireRate: 2
+  isfirstWeapon: 1
+  nextWeapon: {fileID: 11400000, guid: 3313994174efb4940abb84b1b5dcbace, type: 2}
+  pointsNeededtoUnlock: 0
+  isUnlocked: 0
