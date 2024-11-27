@@ -4,7 +4,6 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
     [SerializeField] private Transform firePoint;
-    public bool hasPowerUpActivated;
 
     private Rigidbody2D rb;
 
@@ -12,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Vector2 movement;
     Vector2 mousePos;
+
+    [HideInInspector] public float powerUpTimer;
 
     private void Start()
     {
@@ -24,11 +25,6 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-
-        if (hasPowerUpActivated)
-        {
-
-        }
     }
 
     private void FixedUpdate()

@@ -156,7 +156,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.0054531097, y: 0.3974191}
+    - - {x: -0.0054531097, y: 0.5836862}
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
@@ -174,6 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 40
   isDead: 0
+  drop: {fileID: 6444676451632441789, guid: 564d4fec221766146b7349b022a2ae59, type: 3}
 --- !u!1 &7199286839888089772
 GameObject:
   m_ObjectHideFlags: 0

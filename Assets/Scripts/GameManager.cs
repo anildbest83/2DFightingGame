@@ -39,7 +39,6 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        Debug.Log("Game Over");
         if (GameOverScreen != null)
             GameOverScreen.SetActive(true);
         player.GetComponent<PlayerMovement>().enabled = false;
